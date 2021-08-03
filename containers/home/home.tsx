@@ -1,20 +1,13 @@
 import React from "react";
+import { HeaderMenu } from "../../components";
+import { PageHomeStyled } from "./home.styles";
 
-import {
- CardTotalStyled,
- DashboardBlockStyled,
- DashboardChartStyled,
- DashboardStyled,
-} from "./home.styles";
-import {
- RiDatabase2Fill,
- RiAlarmWarningFill,
- RiShieldKeyholeFill,
- RiSpam3Fill,
-} from "react-icons/ri";
-
-const DashboardPage = () => {
- return <DashboardStyled>Tes</DashboardStyled>;
+const HomePage = () => {
+ return (
+  <PageHomeStyled>
+   <HeaderMenu />
+  </PageHomeStyled>
+ );
 };
 
-export default DashboardPage;
+export default HomePage;
