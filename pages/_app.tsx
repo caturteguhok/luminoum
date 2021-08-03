@@ -13,7 +13,7 @@ const App = ({ Component, pageProps }: AppProps) => {
     <meta name="description" content="Luminoum" />
     <meta name="theme-color" content="#092c52" />
     {/* Favicon */}
-    <link rel="icon" href="http://luminoum.com/dev/images/logo.png" />
+    <link rel="icon" href="https://luminoum.com/dev/images/logo.png" />
     {/* Fonts */}
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
