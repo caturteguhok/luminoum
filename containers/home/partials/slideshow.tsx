@@ -30,13 +30,13 @@ const SlideshowPartial = () => {
    <SliderStyled>
     <Slider {...settings}>
      <div>
+      <img src="https://picsum.photos/id/10/1920/1080" alt="" />
+     </div>
+     <div>
       <img src="https://picsum.photos/id/0/1920/1080" alt="" />
      </div>
      <div>
       <img src="https://picsum.photos/id/1/1920/1080" alt="" />
-     </div>
-     <div>
-      <img src="https://picsum.photos/id/10/1920/1080" alt="" />
      </div>
      <div>
       <img src="https://picsum.photos/id/100/1920/1080" alt="" />
