@@ -3,15 +3,21 @@ import {
  ClickAwayListener,
  Container,
  Grow,
+ Link,
  MenuItem,
  MenuList,
  Paper,
  Popper,
 } from "@material-ui/core";
 import React from "react";
-import { HeaderMenuStyled } from "./headerMenu.styles";
+import { HeaderMenuBlockStyled, HeaderMenuStyled } from "./headerMenu.styles";
 
-const HomePage = () => {
+export interface IProps {
+ headerAbsolute?: boolean;
+ headerBlock?: boolean;
+}
+
+const HomePage: React.FC<IProps> = ({ headerAbsolute, headerBlock }) => {
  const [open, setOpen] = React.useState(false);
  const anchorRef = React.useRef(null);
 
@@ -26,54 +32,63 @@ const HomePage = () => {
   setOpen(false);
  };
 
- return (
-  <HeaderMenuStyled>
-   <Container maxWidth="lg">
-    <img src="https://luminoum.com/dev/images/logo.svg" alt="" />
-    <div>
+ const menuItem = (
+  <Container maxWidth="lg">
+   <img src="https://luminoum.com/dev/images/logo.svg" alt="" />
+   <div>
+    <Link href="/">
      <Button>Home</Button>
-     <div>
-      <Button
-       ref={anchorRef}
-       aria-controls={open ? "menu-list-grow" : undefined}
-       aria-haspopup="true"
-       onClick={handleToggle}
-      >
-       Product
-      </Button>
-      <Popper
-       open={open}
-       anchorEl={anchorRef.current}
-       role={undefined}
-       transition
-       disablePortal
-      >
-       {({ TransitionProps, placement }) => (
-        <Grow
-         {...TransitionProps}
-         style={{
-          transformOrigin:
-           placement === "bottom" ? "center top" : "center bottom",
-         }}
-        >
-         <Paper>
-          <ClickAwayListener onClickAway={handleClose}>
-           <MenuList autoFocusItem={open} id="menu-list-grow">
-            <MenuItem onClick={handleClose}>Luminoum</MenuItem>
-            <MenuItem onClick={handleClose}>Lumislim</MenuItem>
-           </MenuList>
-          </ClickAwayListener>
-         </Paper>
-        </Grow>
-       )}
-      </Popper>
-     </div>
-     <Button>About</Button>
-     <Button>Contact</Button>
-     <Button>FAQ</Button>
+    </Link>
+    <div>
+     <Button
+      ref={anchorRef}
+      aria-controls={open ? "menu-list-grow" : undefined}
+      aria-haspopup="true"
+      onClick={handleToggle}
+     >
+      Product
+     </Button>
+     <Popper
+      open={open}
+      anchorEl={anchorRef.current}
+      role={undefined}
+      transition
+      disablePortal
+     >
+      {({ TransitionProps, placement }) => (
+       <Grow
+        {...TransitionProps}
+        style={{
+         transformOrigin:
+          placement === "bottom" ? "center top" : "center bottom",
+        }}
+       >
+        <Paper>
+         <ClickAwayListener onClickAway={handleClose}>
+          <MenuList autoFocusItem={open} id="menu-list-grow">
+           <MenuItem onClick={handleClose}>Luminoum</MenuItem>
+           <MenuItem onClick={handleClose}>Lumislim</MenuItem>
+          </MenuList>
+         </ClickAwayListener>
+        </Paper>
+       </Grow>
+      )}
+     </Popper>
     </div>
-   </Container>
-  </HeaderMenuStyled>
+    <Button>About</Button>
+    <Button>Contact</Button>
+    <Link href="/faq">
+     <Button>FAQ</Button>
+    </Link>
+   </div>
+  </Container>
+ );
+
+ return (
+  <>
+   {headerAbsolute && <HeaderMenuStyled>{menuItem}</HeaderMenuStyled>}
+   {headerBlock && <HeaderMenuBlockStyled>{menuItem}</HeaderMenuBlockStyled>}
+  </>
  );
 };
 

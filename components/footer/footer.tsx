@@ -27,41 +27,41 @@ const FooterComponent = () => {
      <div>
       <ul>
        <li>
-        <a href="#">Home</a>
+        <Link href="/">Home</Link>
        </li>
        <li>
-        <a href="#">Product</a>
+        <Link href="/product">Product</Link>
        </li>
        <li>
-        <a href="#">About</a>
+        <Link href="/about">About</Link>
        </li>
        <li>
-        <a href="#">Contact</a>
+        <Link href="/contact">Contact</Link>
        </li>
        <li>
-        <a href="#">FAQ</a>
+        <Link href="/faq">FAQ</Link>
        </li>
       </ul>
       <SosmedIconStyled>
        <ul>
         <li>
          <Link href="https://instagram.com">
-          <RiInstagramLine />
+          <RiInstagramLine size={28} />
          </Link>
         </li>
         <li>
          <Link href="https://facebook.com">
-          <RiFacebookFill />
+          <RiFacebookFill size={28} />
          </Link>
         </li>
         <li>
          <Link href="https://telegram.com">
-          <RiSendPlaneLine />
+          <RiSendPlaneLine size={28} />
          </Link>
         </li>
         <li>
          <Link href="https://whatsapp.com">
-          <RiWhatsappLine />
+          <RiWhatsappLine size={28} />
          </Link>
         </li>
        </ul>

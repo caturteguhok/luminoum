@@ -19,4 +19,23 @@ export const HeaderMenuStyled = styled.div({
    alignItems: "center",
   },
  },
+ button: {
+  fontSize: 16,
+ },
+});
+
+export const HeaderMenuBlockStyled = styled.div({
+ paddingTop: 36,
+ paddingBottom: 36,
+ "& > div": {
+  display: "flex",
+  justifyContent: "space-between",
+  "& > img": {
+   width: 50,
+  },
+  "& > div": {
+   display: "flex",
+   alignItems: "center",
+  },
+ },
 });
