@@ -34,7 +34,9 @@ const HomePage: React.FC<IProps> = ({ headerAbsolute, headerBlock }) => {
 
  const menuItem = (
   <Container maxWidth="lg">
-   <img src="https://luminoum.com/dev/images/logo.svg" alt="" />
+   <Link href="/">
+    <img src="https://luminoum.com/dev/images/logo.svg" alt="" />
+   </Link>
    <div>
     <Link href="/">
      <Button>Home</Button>
@@ -66,8 +68,12 @@ const HomePage: React.FC<IProps> = ({ headerAbsolute, headerBlock }) => {
         <Paper>
          <ClickAwayListener onClickAway={handleClose}>
           <MenuList autoFocusItem={open} id="menu-list-grow">
-           <MenuItem onClick={handleClose}>Luminoum</MenuItem>
-           <MenuItem onClick={handleClose}>Lumislim</MenuItem>
+           <MenuItem onClick={handleClose}>
+            <Link href="/product/luminoum">Luminoum</Link>
+           </MenuItem>
+           <MenuItem onClick={handleClose}>
+            <Link href="/product/luminoum">Lumislim</Link>
+           </MenuItem>
           </MenuList>
          </ClickAwayListener>
         </Paper>
@@ -75,8 +81,12 @@ const HomePage: React.FC<IProps> = ({ headerAbsolute, headerBlock }) => {
       )}
      </Popper>
     </div>
-    <Button>About</Button>
-    <Button>Contact</Button>
+    <Link href="/about">
+     <Button>About</Button>
+    </Link>
+    <Link href="/contact">
+     <Button>Contact</Button>
+    </Link>
     <Link href="/faq">
      <Button>FAQ</Button>
     </Link>
@@ -86,7 +96,11 @@ const HomePage: React.FC<IProps> = ({ headerAbsolute, headerBlock }) => {
 
  return (
   <>
-   {headerAbsolute && <HeaderMenuStyled>{menuItem}</HeaderMenuStyled>}
+   {headerAbsolute && (
+    <HeaderMenuStyled>
+     <HeaderMenuBlockStyled>{menuItem}</HeaderMenuBlockStyled>
+    </HeaderMenuStyled>
+   )}
    {headerBlock && <HeaderMenuBlockStyled>{menuItem}</HeaderMenuBlockStyled>}
   </>
  );

@@ -1,4 +1,4 @@
-import { Button, Container } from "@material-ui/core";
+import { Button, Container, Link } from "@material-ui/core";
 import React from "react";
 import {
  AboutDescStyled,
@@ -17,11 +17,16 @@ const AboutPartial = () => {
       of dietary supplements industry. Operate in the Capital of INDONESIA,
       Jakarta & spread horizontally throughout the archipelago, NUSANTARA.
      </p>
-     <Button variant="contained">About Us</Button>
+     <Link href="/about">
+      <Button variant="contained">About Us</Button>
+     </Link>
     </Container>
    </AboutDescStyled>
    <ImageBlock
-    style={{ backgroundImage: "url(https://picsum.photos/id/10/1920/1080)" }}
+    style={{
+     backgroundImage:
+      "url(https://via.placeholder.com/1080x800.png?text=Banner+About+at+luminoum.com)",
+    }}
    />
   </AboutSectionStyled>
  );

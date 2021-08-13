@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
-import { SliderStyled } from "../home.styles";
 import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
+import { SliderStyled } from "../../home/home.styles";
 
 function SamplePrevArrow(props) {
  const { className, onClick } = props;

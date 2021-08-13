@@ -78,15 +78,21 @@ export const AboutDescStyled = styled.div({
   marginBottom: 24,
   lineHeight: 1.5,
   maxWidth: 360,
-  "& + button": {
-   width: 200,
-   textTransform: "capitalize",
-   backgroundColor: "#762300",
-   color: Color.light,
-   fontSize: 18,
-   "&:hover": {
-    backgroundColor: "rgba(118,35,0,0.6)",
-   },
+ },
+ a: {
+  textDecoration: "none",
+  "&:hover": {
+   textDecoration: "none",
+  },
+ },
+ button: {
+  width: 200,
+  textTransform: "capitalize",
+  backgroundColor: "#762300",
+  color: Color.light,
+  fontSize: 18,
+  "&:hover": {
+   backgroundColor: "rgba(118,35,0,0.6)",
   },
  },
 });

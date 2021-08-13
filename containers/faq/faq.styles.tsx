@@ -17,6 +17,9 @@ export const CircleImgStyled = styled.div({
  width: 400,
  height: 400,
  borderRadius: "50%",
+ backgroundPosition: "center",
+ backgroundRepeat: "no-repeat",
+ backgroundSize: "cover",
 });
 
 export const OrderNowStyled = styled.div({
