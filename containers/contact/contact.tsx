@@ -1,10 +1,10 @@
 import React from "react";
 import { HeaderMenu, Layout } from "../../components";
 import { BgWhiteStyle } from "../faq/faq.styles";
-import HistoryContainer from "./partials/history";
-import OfficeContainer from "./partials/office";
-import VisiMisiContainer from "./partials/visionMission";
+import SocialMediaContainer from "./partials/socialMedia";
 import SlideshowPartial from "./partials/slideshow";
+import { Divider } from "@material-ui/core";
+import ConsultantPartial from "./partials/consultant";
 
 const AboutContainer = () => {
  return (
@@ -13,11 +13,11 @@ const AboutContainer = () => {
     <HeaderMenu headerAbsolute />
     <SlideshowPartial />
     <BgWhiteStyle>
-     <HistoryContainer />
+     <SocialMediaContainer />
     </BgWhiteStyle>
-    <VisiMisiContainer />
+    <Divider />
     <BgWhiteStyle>
-     <OfficeContainer />
+     <ConsultantPartial />
     </BgWhiteStyle>
    </Layout>
   </>

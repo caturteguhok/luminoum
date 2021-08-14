@@ -72,7 +72,7 @@ const HomePage: React.FC<IProps> = ({ headerAbsolute, headerBlock }) => {
             <Link href="/product/luminoum">Luminoum</Link>
            </MenuItem>
            <MenuItem onClick={handleClose}>
-            <Link href="/product/luminoum">Lumislim</Link>
+            <Link href="/product/lumislim">Lumislim</Link>
            </MenuItem>
           </MenuList>
          </ClickAwayListener>

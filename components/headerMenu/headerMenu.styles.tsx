@@ -5,7 +5,7 @@ export const HeaderMenuStyled = styled.div({
  top: 0,
  left: 0,
  width: "100%",
- zIndex: 1,
+ zIndex: 10,
 });
 
 export const HeaderMenuBlockStyled = styled.div({
