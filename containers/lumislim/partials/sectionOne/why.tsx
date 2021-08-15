@@ -1,53 +1,61 @@
 import { Container } from "@material-ui/core";
 import React from "react";
 import {
- TitleLuminoumStyled,
+ LumislimBgWhyStyled,
  WhyItemStyled,
  WhyStyled,
+ QuoteStyled,
 } from "../../lumislim.styles";
 
 const WhyPartial = () => {
  return (
   <WhyStyled>
+   <LumislimBgWhyStyled>
+    <img src="https://luminoum.com/dev/images/img-bg-lumislim-1.svg" alt="" />
+   </LumislimBgWhyStyled>
    <Container maxWidth="lg">
-    <TitleLuminoumStyled>
-     <div>Mengapa memilih Luminoum Collagen?</div>
-    </TitleLuminoumStyled>
+    <h1>
+     Mengapa memilih{" "}
+     <img src="https://luminoum.com/dev/images/logo-lumislim.png" alt="" />{" "}
+     Fiber?
+    </h1>
     <WhyItemStyled>
      <div>
-      <img src="https://luminoum.com/dev/images/img-why-1.png" alt="" />
-      <strong>Collagen for a better version of you</strong>
+      <img
+       src="https://luminoum.com/dev/images/img-lumislim-why-woman.png"
+       alt=""
+      />
       <p>
-       <strong>Luminoum Collagen dengan teknologi tripeptide</strong>, mengurai
-       senyawa kolagen menjadi partikel yang lebih kecil dibanding kolagen pada
-       umum-nya (hydrolized collagen), sehingga partikel kolagen ini{" "}
-       <strong>lebih mudah diserap oleh tubuh</strong> sehingga manfaatnya dapat
-       lebih maksimal berdampak bagi tubuh kita.
+       <p>
+        Lumislim dengan teknologi hydrolized, sehingga seluruh kandungan yang
+        terdapat dalam Lumislim dapat diserap oleh tubuh secara maksimal. Selain
+        dapat memenuhi kebutuhan serat harian, juga membantu detox harian anda,
+        karena dengan usus yang bersih, akan terlihat tampilan kulit yang bersih
+        alami dari dalam.
+       </p>
+       <p>
+        Selain itu LUMISLIM diformulasikan secara khusus agar komposisi di
+        dalamnya dapat memberikan manfaat nyata jika dikonsumsi sesuai takaran
+        dan anjuran. Dengan formulasi rendah gula dan rendah kalori, serta dalam
+        1 sachet LUMISLIM juga terdapat kandungan green coffee dan garcinia
+        cambogia yang dapat membantu proses pembakaran lemak agar dapat mencapai
+        berat badan yang ideal.
+       </p>
+       <p>
+        Keunggulan lainnya, Lumislim juga dilengkapi dengan vitamin C, red beet
+        dan grapeseed yang sangat tinggi antioksidan untuk memelihara Kesehatan
+        dan daya tahan tubuh. Cantik berseri, langsing dan sehat alami dapat
+        anda dapatkan dengan mengkonsumsi LUMISLIM Fiber secara rutin.
+       </p>
       </p>
-     </div>
-     <div>
-      <img src="https://luminoum.com/dev/images/img-why-2.png" alt="" />
-      <strong>Best Ingredients</strong>
-      <p>
-       Luminoum untuk hal ini sangat serius dalam memilih dan meracik bahan baku
-       yang terbaik dan pas untuk dikonsumsi dan bermanfaat bagi tubuh manusia.
-       Kandungan Luminoum Collagen diantaranya adalah Collagen Tripeptide,
-       L-Glutathione grade A, Vitamin C, Vitamin B kompleks, Vitamin E, Vitamin
-       D3, Red Beet powder, Grapeseed, dan Zinc yang diproses menggunakan
-       teknologi dari Jepang.
-      </p>
-     </div>
-     <div>
-      <img src="https://luminoum.com/dev/images/img-why-3.png" alt="" />
-      <strong>Luminoum Certifications</strong>
-      <p>
-       <strong>Luminoum telah memenuhi standard BPOM, GMP dan Hallal</strong>,
-       sertifikat-sertifikat tersebut untuk memastikan bahwa produk Luminoum
-       Collagen layak dan aman untuk dikonsumsi.
-      </p>
-     </div>
+     </div>{" "}
     </WhyItemStyled>
    </Container>
+   <QuoteStyled>
+    <div>
+     <strong>“Being healthy starts in your gut”</strong>
+    </div>
+   </QuoteStyled>
   </WhyStyled>
  );
 };

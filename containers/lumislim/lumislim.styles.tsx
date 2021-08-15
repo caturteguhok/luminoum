@@ -38,64 +38,88 @@ export const ProductTitleStyled = styled.div({
 
 export const SectionOneStyled = styled.div({
  position: "relative",
- padding: "100px 24px",
- background:
-  "linear-gradient(180deg, #F7E5F8 0%, rgba(249, 235, 249, 0.640625) 79.17%, rgba(252, 247, 252, 0) 100%)",
+ zIndex: 5,
+ padding: "100px 24px 0 24px",
 });
 
 export const SectionTwoStyled = styled.div({
  position: "relative",
- padding: "1px 0 0 0",
- background:
-  "linear-gradient(180deg, rgba(249, 225, 236, 0.6) 0%, rgba(252, 240, 240, 0) 100%)",
+ zIndex: 6,
+ padding: "1px 0 100px 0",
+ backgroundColor: "#F4FEF8",
 });
 
 export const SectionThreeStyled = styled.div({
  position: "relative",
- backgroundColor: "#F9E1EC",
- padding: "1px 0 120px 0",
+ zIndex: 6,
+ backgroundColor: "#FFFFFF",
+ padding: "1px 0 0 0",
 });
 
 export const SectionFourStyled = styled.div({
  position: "relative",
- backgroundColor: "#FDE5FE",
+ backgroundColor: "#F1F9F4",
  padding: "1px 0 120px 0",
  boxShadow: "inset 0px 4px 19px -1px rgba(0, 0, 0, 0.15)",
 });
 
-export const CollagenStyled = styled.div({
+export const HealthyStyled = styled.div({
  position: "relative",
  zIndex: 5,
+ h1: {
+  color: "#397350",
+  textAlign: "center",
+  marginBottom: 24,
+  display: "block",
+  span: {
+   color: "#B0254D",
+  },
+ },
+ p: {
+  textAlign: "justify",
+  color: "#397350",
+  maxWidth: 700,
+ },
  "& > div": {
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
   img: {
    maxWidth: 500,
+   margin: "0 40px",
+  },
+  ".box": {
+   img: {
+    maxWidth: 300,
+   },
   },
   "& > div": {
-   maxWidth: 500,
-   h1: {
-    color: "#923196",
-    textAlign: "left",
-    marginBottom: 24,
-   },
+   display: "flex",
+   alignItems: "center",
+   justifyContent: "center",
+   marginTop: 80,
    p: {
-    color: "#851689",
-    fontSize: 18,
+    fontSize: 20,
     lineHeight: 1.7,
    },
   },
  },
 });
 
-export const LuminoumBgOneStyled = styled.div({
+export const LumislimBgOneStyled = styled.div({
  position: "absolute",
- top: "20%",
- right: -30,
+ top: "2%",
+ right: "-40%",
  zIndex: 0,
  img: {
-  maxWidth: "100%",
+  maxWidth: "80%",
+ },
+});
+
+export const LumislimBgOneSubOneStyled = styled.div({
+ position: "absolute",
+ top: "8%",
+ left: "-20%",
+ zIndex: 0,
+ img: {
+  maxWidth: "80%",
  },
 });
 
@@ -112,6 +136,18 @@ export const LuminoumBgThreeStyled = styled.div({
 export const WhyStyled = styled.div({
  position: "relative",
  zIndex: 5,
+ marginTop: 100,
+ h1: {
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  color: "#397350",
+  marginBottom: 40,
+  img: {
+   margin: "0 24px",
+   maxWidth: 200,
+  },
+ },
 });
 
 export const TitleLuminoumStyled = styled.div({
@@ -146,15 +182,16 @@ export const TitleWoBlockStyled = styled.div({
 });
 
 export const WhyItemStyled = styled.div({
- display: "grid",
- gridTemplateColumns: "repeat(3, 1fr)",
- gap: 60,
+ display: "flex",
+ justifyContent: "center",
+ marginBottom: 240,
  "& > div": {
   display: "flex",
-  flexDirection: "column",
+  alignItems: "center",
   img: {
-   maxWidth: 240,
+   maxWidth: 300,
    margin: "0 auto",
+   marginRight: 80,
   },
   "& > strong": {
    color: "#761698",
@@ -164,43 +201,39 @@ export const WhyItemStyled = styled.div({
   },
   p: {
    textAlign: "justify",
-   color: "#540B6D",
+   color: "#397350",
    lineHeight: 1.7,
-   margin: 0,
+   fontSize: 20,
+   maxWidth: 600,
   },
  },
 });
 
 export const CompositionItemStyled = styled.div({
- ul: {
-  display: "grid",
-  gridTemplateColumns: "repeat(2, 1fr)",
-  gap: 40,
-  li: {
-   "& > div": {
-    backgroundColor: "#F9E1EC99",
-    display: "flex",
-    alignItems: "center",
-    padding: 24,
-    minHeight: 290,
-    img: {
-     width: 160,
-     marginRight: 24,
-    },
-    p: {
-     display: "flex",
-     flexDirection: "column",
-     strong: {
-      color: "#761698",
-      marginBottom: 16,
-     },
-     span: {
-      color: "#540B6D",
-      lineHeight: 1.5,
-     },
-    },
-   },
+ marginBottom: 100,
+ "& > div": {
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  margin: "0 36px",
+  strong: {
+   fontSize: 56,
+   fontWeight: 700,
+   marginBottom: 16,
+   display: "block",
+   color: "#397350",
   },
+  p: {
+   maxWidth: 400,
+   color: "#397350",
+   fontSize: 18,
+   lineHeight: 1.5,
+   textAlign: "justify",
+  },
+ },
+ img: {
+  maxWidth: 400,
+  marginRight: 40,
  },
 });
 
@@ -277,11 +310,12 @@ export const QuoteStyled = styled.div({
  "&:before": {
   content: "''",
   position: "absolute",
-  top: 0,
-  left: 0,
-  zIndex: 0,
-  width: "100%",
-  height: 400,
+  top: "-14%",
+  left: "50%",
+  zIndex: -1,
+  width: 2000,
+  height: 2000,
+  transform: "translate(-50%,0)",
   backgroundColor: "#FEF5F9",
   borderTopLeftRadius: "50%",
   borderTopRightRadius: "50%",
@@ -295,20 +329,11 @@ export const QuoteStyled = styled.div({
   height: 400,
   zIndex: 1,
   strong: {
-   color: "#540B6D",
+   color: "#B0254D",
    fontStyle: "italic",
-   fontSize: 24,
+   fontSize: 40,
    marginTop: 16,
    marginBottom: 16,
-  },
-  p: {
-   fontSize: 20,
-   maxWidth: 620,
-   lineHeight: 1.5,
-   margin: "0 auto",
-   color: "#540B6D",
-   fontStyle: "italic",
-   textAlign: "center",
   },
  },
 });
@@ -333,7 +358,7 @@ export const BenefitItemStyled = styled.div({
  "& > div": {
   display: "flex",
   alignItems: "center",
-  color: "#540B6D",
+  color: "#397350",
   "& > div": {
    margin: "0 36px",
    strong: {
@@ -344,20 +369,32 @@ export const BenefitItemStyled = styled.div({
    },
    ul: {
     listStyle: "none",
+    maxWidth: 600,
     li: {
      listStyle: "none",
      display: "flex",
-     alignItems: "center",
-     fontSize: 18,
+     alignItems: "flex-start",
+     fontSize: 24,
+     lineHeight: 1.5,
      "&:before": {
       content: "'·'",
       fontSize: 100,
-      verticalAlign: "middle",
       lineHeight: "40px",
       position: "relative",
-      top: -9,
+      top: -12,
       left: 0,
       marginRight: 10,
+     },
+     span: {
+      display: "table",
+     },
+     svg: {
+      marginLeft: 16,
+      position: "relative",
+      top: 2,
+     },
+     "& + li": {
+      marginTop: 16,
      },
     },
    },
@@ -412,4 +449,90 @@ export const ServingItemStyled = styled.div({
 export const SpacingStyled = styled.div({
  paddingTop: 100,
  paddingBottom: 100,
+});
+
+export const CircleImgStyled = styled.div({
+ width: 400,
+ height: 400,
+ borderRadius: "50%",
+ backgroundPosition: "center",
+ backgroundRepeat: "no-repeat",
+ backgroundSize: "cover",
+ margin: "0 40px",
+});
+
+export const LumislimBgWhyStyled = styled.div({
+ position: "absolute",
+ top: "6%",
+ right: "-44%",
+ zIndex: 0,
+ img: {
+  maxWidth: "75%",
+ },
+});
+
+export const ImgLogoCompositionLumislimStyled = styled.div({
+ display: "flex",
+ flexDirection: "column",
+ alignItems: "center",
+ marginBottom: 80,
+ marginTop: -70,
+ img: {
+  maxWidth: 300,
+ },
+});
+
+export const TitleCompositionStyled = styled.div({
+ marginBottom: 24,
+ div: {
+  display: "flex",
+  justifyContent: "flex-end",
+  minWidth: "60%",
+  borderBottom: "3px solid #EEC756",
+  h3: {
+   fontSize: 36,
+  },
+ },
+ "&.right": {
+  justifyContent: "flex-end",
+  div: {
+   justifyContent: "flex-start",
+  },
+ },
+ "&.left": {
+  justifyContent: "flex-start",
+  div: {
+   justifyContent: "flex-end",
+  },
+ },
+});
+
+export const CompositionOtherStyled = styled.div({
+ backgroundColor: "#F4F5FE",
+ padding: "1px 24px 100px 24px",
+ h3: {
+  color: "#397350",
+  display: "block",
+ },
+ "& > div": {
+  "& > div": {
+   display: "flex",
+   alignItems: "center",
+   img: {
+    maxWidth: 400,
+    marginRight: 40,
+    marginLeft: 40,
+   },
+   p: {
+    color: "#397350",
+    lineHeight: 1.5,
+    fontSize: 20,
+    maxWidth: 600,
+    textAlign: "justify",
+   },
+   "& + div": {
+    justifyContent: "center",
+   },
+  },
+ },
 });

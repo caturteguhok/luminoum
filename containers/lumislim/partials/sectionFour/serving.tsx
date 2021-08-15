@@ -1,6 +1,7 @@
 import { Container } from "@material-ui/core";
 import React from "react";
 import {
+ CompositionItemStyled,
  ServingItemStyled,
  TitleLuminoumStyled,
  WhyStyled,
@@ -10,23 +11,36 @@ const ServingPartial = () => {
  return (
   <WhyStyled>
    <Container maxWidth="lg">
-    <TitleLuminoumStyled>
-     <div>SARAN PENYAJIAN</div>
-    </TitleLuminoumStyled>
-    <ServingItemStyled>
+    <h1>
+     Saran Penyajian{" "}
+     <img src="https://luminoum.com/dev/images/logo-lumislim.png" alt="" />{" "}
+     Fiber
+    </h1>
+    <CompositionItemStyled>
      <div>
-      <img src="https://luminoum.com/dev/images/img-serving-1.png" alt="" />
-      <p>1. Tuangkan 1 sachet ke dalam gelas dan tambahkan 150ml air dingin</p>
+      <img
+       src="https://luminoum.com/dev/images/img-lumislim-serving.jpg"
+       alt=""
+       style={{ borderRadius: 60 }}
+      />
+      <div>
+       <p>
+        Lumislim Fiber dengan kemasan praktis, dapat dibawa kemana pun anda
+        berpergian, bahkan pada saat anda sedang travel sekalipun.
+       </p>
+       <p>
+        Penyajiannya sangat mudah, cukup sediakan 1 gelas air (150ml) dengan
+        suhu ruangan, dan tuangkan LUMISLIM Fiber ke dalam-nya, lalu aduk hingga
+        rata dan segera minum.
+       </p>
+       <p>
+        Bisa juga disajikan dingin, sediakan 1 botol shaker, masukan es batu
+        secukupnya dan air (150ml), tuangkan LUMISLIM Fiber ke dalam-nya, tutup
+        botol shaker dan kocok hingga rata dan segera minum.
+       </p>
+      </div>
      </div>
-     <div>
-      <img src="https://luminoum.com/dev/images/img-serving-2.png" alt="" />
-      <p>2. Aduk hingga rata</p>
-     </div>
-     <div>
-      <img src="https://luminoum.com/dev/images/img-serving-3.png" alt="" />
-      <p>3. Segera minum</p>
-     </div>
-    </ServingItemStyled>
+    </CompositionItemStyled>
    </Container>
   </WhyStyled>
  );

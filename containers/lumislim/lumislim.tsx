@@ -6,20 +6,18 @@ import {
  SectionTwoStyled,
  SectionThreeStyled,
  SectionFourStyled,
- LuminoumBgOneStyled,
  LuminoumBgThreeStyled,
+ LumislimBgOneStyled,
+ LumislimBgOneSubOneStyled,
 } from "./lumislim.styles";
 import BannerPartial from "./partials/banner";
 import OrderNowPartial from "./partials/orderNow";
 import ServingPartial from "./partials/sectionFour/serving";
-import TimingPartial from "./partials/sectionFour/timing";
-import CollagenPartial from "./partials/sectionOne/collagen";
-import CompositionPartial from "./partials/sectionOne/composition";
-import KnowledgePartial from "./partials/sectionOne/knowledge";
+import HealthyPartial from "./partials/sectionOne/healthy";
 import WhyPartial from "./partials/sectionOne/why";
-import BenefitPartial from "./partials/sectionThree/benefit";
-import RoleCollagenPartial from "./partials/sectionTwo/roleCollagen";
-import SkinStructurePartial from "./partials/sectionTwo/skinStructure";
+import CompositionPartial from "./partials/sectionThree/composition";
+import CompositionOtherPartial from "./partials/sectionThree/compositionOther";
+import BenefitPartial from "./partials/sectionTwo/benefit";
 
 const LuminoumContainer = () => {
  return (
@@ -27,29 +25,26 @@ const LuminoumContainer = () => {
    <PageLuminoumStyled>
     <HeaderMenu headerAbsolute />
     <BannerPartial />
-    {/* <SectionOneStyled>
-     <LuminoumBgOneStyled>
-      <img src="https://luminoum.com/dev/images/luminoum-bg-1.png" alt="" />
-     </LuminoumBgOneStyled>
-     <CollagenPartial />
+    <SectionOneStyled>
+     <LumislimBgOneStyled>
+      <img src="https://luminoum.com/dev/images/img-bg-lumislim-1.svg" alt="" />
+     </LumislimBgOneStyled>
+     <LumislimBgOneSubOneStyled>
+      <img src="https://luminoum.com/dev/images/img-bg-lumislim-2.svg" alt="" />
+     </LumislimBgOneSubOneStyled>
+     <HealthyPartial />
      <WhyPartial />
-     <CompositionPartial />
-     <KnowledgePartial />
     </SectionOneStyled>
     <SectionTwoStyled>
-     <RoleCollagenPartial />
-     <SkinStructurePartial />
+     <BenefitPartial />
     </SectionTwoStyled>
     <SectionThreeStyled>
-     <BenefitPartial />
-     <LuminoumBgThreeStyled>
-      <img src="https://luminoum.com/dev/images/img-bg-benefit.svg" alt="" />
-     </LuminoumBgThreeStyled>
+     <CompositionPartial />
+     <CompositionOtherPartial />
     </SectionThreeStyled>
     <SectionFourStyled>
-     <TimingPartial />
      <ServingPartial />
-    </SectionFourStyled> */}
+    </SectionFourStyled>
     <OrderNowPartial />
    </PageLuminoumStyled>
   </Layout>
