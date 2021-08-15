@@ -1,152 +1,415 @@
 import Color from "../../assets/color";
 import styled from "@emotion/styled";
 
-export const PageHomeStyled = styled.div({
+export const PageLuminoumStyled = styled.div({
  backgroundColor: Color.light,
  overflow: "hidden",
  position: "relative",
 });
 
-export const ProductSectionStyled = styled.div({
- backgroundColor: Color.light,
- paddingTop: 100,
- paddingBottom: 100,
- "& > div": {},
-});
-
-export const SliderStyled = styled.div({
- img: {
-  width: "100%",
- },
- ".slick-prev": {
-  left: 80,
- },
- ".slick-next": {
-  right: 80,
- },
- ".slick-prev, .slick-next": {
-  zIndex: 10,
-  color: Color.light,
-  width: 70,
-  height: 70,
- },
- ".slick-dots": {
-  bottom: 60,
-  li: {
-   "button:before": {
-    color: Color.light,
-    opacity: 0.7,
-    fontSize: 12,
-   },
-   "&.slick-active": {
-    "button:before": {
-     color: Color.font.ink,
-     opacity: 1,
-    },
-   },
-  },
- },
-});
-
-export const ProductItemSection = styled.div({
- display: "grid",
- gridTemplateColumns: "repeat(2, 1fr)",
- gap: 100,
- "& > div": {
-  minHeight: 300,
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
-  backgroundColor: Color.slate[100],
- },
-});
-
-export const AboutDescStyled = styled.div({
- position: "absolute",
- left: 0,
- top: 0,
- width: "100%",
- display: "flex",
- alignItems: "center",
- minHeight: 600,
-
- img: {
-  width: 300,
- },
- p: {
-  marginTop: 24,
-  marginBottom: 24,
-  lineHeight: 1.5,
-  maxWidth: 360,
- },
- a: {
-  textDecoration: "none",
-  "&:hover": {
-   textDecoration: "none",
-  },
- },
- button: {
-  width: 200,
-  textTransform: "capitalize",
-  backgroundColor: "#762300",
-  color: Color.light,
-  fontSize: 18,
-  "&:hover": {
-   backgroundColor: "rgba(118,35,0,0.6)",
-  },
- },
-});
-
-export const CertificateStyled = styled.div({
- background: "#F9F9F9",
- boxShadow: "-1px 4px 4px rgba(0, 0, 0, 0.25)",
- borderRadius: "640px 0 0 640px",
- paddingTop: 140,
- paddingBottom: 140,
- marginTop: 100,
- marginBottom: 0,
+export const BannerStyled = styled.div({
  position: "relative",
- zIndex: 1,
+ "&:before": {
+  content: "''",
+  position: "absolute",
+  top: 0,
+  left: 0,
+  width: "100%",
+  height: "100%",
+  background: "rgba(246, 244, 246, 0.24)",
+  zIndex: 1,
+ },
+ "& > img": {
+  maxWidth: "100%",
+  display: "block",
+ },
+});
 
+export const ProductTitleStyled = styled.div({
+ position: "absolute",
+ top: "50%",
+ right: 100,
+ transform: "translate(-50%,-50%)",
+ zIndex: 5,
+ img: {
+  maxWidth: 300,
+ },
+});
+
+export const SectionOneStyled = styled.div({
+ position: "relative",
+ padding: "100px 24px",
+ background:
+  "linear-gradient(180deg, #F7E5F8 0%, rgba(249, 235, 249, 0.640625) 79.17%, rgba(252, 247, 252, 0) 100%)",
+});
+
+export const SectionTwoStyled = styled.div({
+ position: "relative",
+ padding: "1px 0 0 0",
+ background:
+  "linear-gradient(180deg, rgba(249, 225, 236, 0.6) 0%, rgba(252, 240, 240, 0) 100%)",
+});
+
+export const SectionThreeStyled = styled.div({
+ position: "relative",
+ backgroundColor: "#F9E1EC",
+ padding: "1px 0 120px 0",
+});
+
+export const SectionFourStyled = styled.div({
+ position: "relative",
+ backgroundColor: "#FDE5FE",
+ padding: "1px 0 120px 0",
+ boxShadow: "inset 0px 4px 19px -1px rgba(0, 0, 0, 0.15)",
+});
+
+export const CollagenStyled = styled.div({
+ position: "relative",
+ zIndex: 5,
+ "& > div": {
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  img: {
+   maxWidth: 500,
+  },
+  "& > div": {
+   maxWidth: 500,
+   h1: {
+    color: "#923196",
+    textAlign: "left",
+    marginBottom: 24,
+   },
+   p: {
+    color: "#851689",
+    fontSize: 18,
+    lineHeight: 1.7,
+   },
+  },
+ },
+});
+
+export const LuminoumBgOneStyled = styled.div({
+ position: "absolute",
+ top: "20%",
+ right: -30,
+ zIndex: 0,
+ img: {
+  maxWidth: "100%",
+ },
+});
+
+export const LuminoumBgThreeStyled = styled.div({
+ position: "absolute",
+ bottom: 0,
+ left: 0,
+ zIndex: 0,
+ img: {
+  maxWidth: "100%",
+ },
+});
+
+export const WhyStyled = styled.div({
+ position: "relative",
+ zIndex: 5,
+});
+
+export const TitleLuminoumStyled = styled.div({
+ display: "flex",
+ justifyContent: "center",
+ marginTop: 120,
+ marginBottom: 80,
+ "& > h3": {
+  fontSize: 32,
+  color: "#540B6D",
+ },
+ div: {
+  backgroundColor: "#FAEFFA",
+  boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+  display: "inline-block",
+  padding: "20px 32px",
+  fontSize: 32,
+  fontWeight: 700,
+  color: "#923196",
+ },
+});
+
+export const TitleWoBlockStyled = styled.div({
+ display: "flex",
+ justifyContent: "center",
+ marginTop: 120,
+ h1: {
+  fontSize: 36,
+  color: "#923196",
+  marginBottom: 20,
+ },
+});
+
+export const WhyItemStyled = styled.div({
+ display: "grid",
+ gridTemplateColumns: "repeat(3, 1fr)",
+ gap: 60,
+ "& > div": {
+  display: "flex",
+  flexDirection: "column",
+  img: {
+   maxWidth: 240,
+   margin: "0 auto",
+  },
+  "& > strong": {
+   color: "#761698",
+   margin: "32px 16px",
+   textAlign: "center",
+   fontSize: 20,
+  },
+  p: {
+   textAlign: "justify",
+   color: "#540B6D",
+   lineHeight: 1.7,
+   margin: 0,
+  },
+ },
+});
+
+export const CompositionItemStyled = styled.div({
  ul: {
   display: "grid",
-  gridTemplateColumns: "repeat(5, 1fr)",
+  gridTemplateColumns: "repeat(2, 1fr)",
   gap: 40,
-  listStyle: "none",
-  padding: 0,
-  margin: 0,
   li: {
-   display: "flex",
-   justifyContent: "center",
-   alignItems: "center",
-   flexDirection: "column",
-   div: {
-    backgroundColor: Color.light,
-    borderRadius: "50%",
-    padding: 16,
-    filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+   "& > div": {
+    backgroundColor: "#F9E1EC99",
+    display: "flex",
+    alignItems: "center",
+    padding: 24,
+    minHeight: 290,
     img: {
-     maxWidth: 180,
+     width: 160,
+     marginRight: 24,
+    },
+    p: {
+     display: "flex",
+     flexDirection: "column",
+     strong: {
+      color: "#761698",
+      marginBottom: 16,
+     },
+     span: {
+      color: "#540B6D",
+      lineHeight: 1.5,
+     },
     },
    },
   },
  },
 });
 
-export const AboutSectionStyled = styled.div({
- display: "flex",
- justifyContent: "flex-end",
- backgroundColor: Color.light,
- position: "relative",
+export const KnowledgeItemStyled = styled.div({
+ maxWidth: "70%",
+ margin: "0 auto",
+ fontSize: 18,
+ lineHeight: 1.5,
+ p: {
+  textAlign: "justify",
+  color: "#540B6D",
+ },
+ "& > div": {
+  display: "flex",
+  alignItems: "center",
+  img: {
+   maxWidth: "50%",
+  },
+ },
+ "& > img": {
+  marginTop: 60,
+  marginBottom: 60,
+ },
 });
 
-export const ImageBlock = styled.div({
+export const RoleCollagenItemStyled = styled.div({
+ maxWidth: "80%",
+ margin: "0 auto",
+ "& > div": {
+  display: "flex",
+  alignItems: "center",
+  img: {
+   maxWidth: 500,
+  },
+  "& > div": {
+   marginLeft: 32,
+   p: {
+    textAlign: "justify",
+    color: "#540B6D",
+    fontSize: 20,
+    lineHeight: 1.5,
+   },
+  },
+ },
+});
+
+export const SkinItemStyled = styled.div({
+ ul: {
+  display: "grid",
+  gridTemplateColumns: "repeat(4, 1fr)",
+  gap: 16,
+  marginTop: 80,
+  li: {
+   color: "#540B6D",
+   padding: "24px 48px",
+   background:
+    "linear-gradient(180deg, rgba(249, 225, 236, 0.6) 0%, rgba(249, 225, 236, 0) 100%)",
+   strong: {
+    textAlign: "center",
+    display: "block",
+    fontSize: 24,
+   },
+   p: {
+    fontSize: 20,
+    lineHeight: 1.5,
+   },
+  },
+ },
+});
+
+export const QuoteStyled = styled.div({
+ marginTop: 100,
+ position: "relative",
+ "&:before": {
+  content: "''",
+  position: "absolute",
+  top: 0,
+  left: 0,
+  zIndex: 0,
+  width: "100%",
+  height: 400,
+  backgroundColor: "#FEF5F9",
+  borderTopLeftRadius: "50%",
+  borderTopRightRadius: "50%",
+ },
+ div: {
+  position: "relative",
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  justifyContent: "center",
+  height: 400,
+  zIndex: 1,
+  strong: {
+   color: "#540B6D",
+   fontStyle: "italic",
+   fontSize: 24,
+   marginTop: 16,
+   marginBottom: 16,
+  },
+  p: {
+   fontSize: 20,
+   maxWidth: 620,
+   lineHeight: 1.5,
+   margin: "0 auto",
+   color: "#540B6D",
+   fontStyle: "italic",
+   textAlign: "center",
+  },
+ },
+});
+
+export const ImgLogoCollagenStyled = styled.div({
  display: "flex",
- justifyContent: "flex-end",
- minHeight: 600,
- flex: "0 0 50%",
- maxWidth: "50%",
- backgroundPosition: "center",
- backgroundRepeat: "no-repeat",
- backgroundSize: "cover",
+ flexDirection: "column",
+ alignItems: "center",
+ marginBottom: 80,
+ img: {
+  maxWidth: 300,
+  "& + img": {
+   maxWidth: 500,
+  },
+ },
+});
+
+export const BenefitItemStyled = styled.div({
+ display: "flex",
+ flexDirection: "column",
+ alignItems: "center",
+ "& > div": {
+  display: "flex",
+  alignItems: "center",
+  color: "#540B6D",
+  "& > div": {
+   margin: "0 36px",
+   strong: {
+    fontSize: 32,
+    fontWeight: 700,
+    marginBottom: 16,
+    display: "block",
+   },
+   ul: {
+    listStyle: "none",
+    li: {
+     listStyle: "none",
+     display: "flex",
+     alignItems: "center",
+     fontSize: 18,
+     "&:before": {
+      content: "'·'",
+      fontSize: 100,
+      verticalAlign: "middle",
+      lineHeight: "40px",
+      position: "relative",
+      top: -9,
+      left: 0,
+      marginRight: 10,
+     },
+    },
+   },
+  },
+  "& + div": {
+   marginTop: 80,
+  },
+ },
+ img: {
+  maxWidth: 400,
+  filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4))",
+ },
+});
+
+export const TimingItemStyled = styled.div({
+ display: "flex",
+ alignItems: "center",
+ flexWrap: "wrap",
+ fontSize: 24,
+ color: "#540B6D",
+ div: {
+  flex: "0 0 45%",
+  maxWidth: "45%",
+  textAlign: "center",
+  img: {
+   maxWidth: "100%",
+  },
+ },
+ p: {
+  flex: "0 0 10%",
+  maxWidth: "10%",
+  textAlign: "center",
+  lineHeight: 1.5,
+ },
+});
+
+export const ServingItemStyled = styled.div({
+ display: "grid",
+ gridTemplateColumns: "repeat(3, 1fr)",
+ gap: 36,
+ div: {
+  textAlign: "center",
+  fontSize: 24,
+  color: "#540B6D",
+  lineHeight: 1.5,
+  img: {
+   maxHeight: 240,
+  },
+ },
+});
+
+export const SpacingStyled = styled.div({
+ paddingTop: 100,
+ paddingBottom: 100,
 });

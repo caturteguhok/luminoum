@@ -17,6 +17,12 @@ export const HeaderMenuBlockStyled = styled.div({
   "& > img": {
    width: 50,
   },
+  a: {
+   textDecoration: "none",
+   "&:hover": {
+    textDecoration: "none",
+   },
+  },
   "& > div": {
    display: "flex",
    alignItems: "center",

@@ -6,7 +6,7 @@ const CertificatePartial = () => {
  return (
   <CertificateStyled>
    <Container maxWidth="lg">
-    <h1>Certificate</h1>
+    <h1>Certificates</h1>
     <ul>
      <li>
       <div>

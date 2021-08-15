@@ -2,7 +2,7 @@ import React from "react";
 import { HeaderMenu, Layout } from "../../components";
 import { BgWhiteStyle } from "../faq/faq.styles";
 import SocialMediaContainer from "./partials/socialMedia";
-import SlideshowPartial from "./partials/slideshow";
+import SlideshowPartial from "../home/partials/slideshow";
 import { Divider } from "@material-ui/core";
 import ConsultantPartial from "./partials/consultant";
 

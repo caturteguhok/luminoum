@@ -53,11 +53,26 @@ export const ProductItemSection = styled.div({
  gridTemplateColumns: "repeat(2, 1fr)",
  gap: 100,
  "& > div": {
-  minHeight: 300,
   display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
-  backgroundColor: Color.slate[100],
+  flexDirection: "column",
+  ".logo-luminoum": {
+   img: {
+    marginTop: 24,
+   },
+  },
+  img: {
+   maxWidth: "100%",
+   borderRadius: 30,
+   filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+  },
+  p: {
+   textAlign: "center",
+   img: {
+    width: 200,
+    borderRadius: 0,
+    filter: "none",
+   },
+  },
  },
 });
 

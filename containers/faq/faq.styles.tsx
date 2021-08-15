@@ -29,6 +29,9 @@ export const OrderNowStyled = styled.div({
   justifyContent: "space-around",
 
   "& > div": {
+   img: {
+    maxWidth: 400,
+   },
    "& + div": {
     marginLeft: 40,
     h1: {
@@ -38,16 +41,16 @@ export const OrderNowStyled = styled.div({
     p: {
      maxWidth: 400,
      lineHeight: 1.5,
-     "& + button": {
-      marginTop: 24,
-      width: 200,
-      textTransform: "capitalize",
-      backgroundColor: "#9E67A0",
-      color: Color.light,
-      fontSize: 18,
-      "&:hover": {
-       backgroundColor: "rgba(158,103,160,0.6)",
-      },
+    },
+    button: {
+     marginTop: 24,
+     width: 200,
+     textTransform: "capitalize",
+     backgroundColor: "#9E67A0",
+     color: Color.light,
+     fontSize: 18,
+     "&:hover": {
+      backgroundColor: "rgba(158,103,160,0.6)",
      },
     },
    },

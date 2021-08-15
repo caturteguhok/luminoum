@@ -17,9 +17,10 @@ function SampleNextArrow(props) {
 
 const SlideshowPartial = () => {
  const settings = {
+  autoplay: true,
   dots: true,
   infinite: true,
-  speed: 500,
+  speed: 1200,
   slidesToShow: 1,
   slidesToScroll: 1,
   nextArrow: <SampleNextArrow />,
@@ -30,37 +31,13 @@ const SlideshowPartial = () => {
    <Slider {...settings}>
     <div>
      <img
-      src="https://via.placeholder.com/1920x1080.png?text=Slide+Item+1+at+luminoum.com"
+      src="https://luminoum.com/dev/images/banner-home-luminoum.jpg"
       alt=""
      />
     </div>
     <div>
      <img
-      src="https://via.placeholder.com/1920x1080.png?text=Slide+Item+2+at+luminoum.com"
-      alt=""
-     />
-    </div>
-    <div>
-     <img
-      src="https://via.placeholder.com/1920x1080.png?text=Slide+Item+3+at+luminoum.com"
-      alt=""
-     />
-    </div>
-    <div>
-     <img
-      src="https://via.placeholder.com/1920x1080.png?text=Slide+Item+4+at+luminoum.com"
-      alt=""
-     />
-    </div>
-    <div>
-     <img
-      src="https://via.placeholder.com/1920x1080.png?text=Slide+Item+5+at+luminoum.com"
-      alt=""
-     />
-    </div>
-    <div>
-     <img
-      src="https://via.placeholder.com/1920x1080.png?text=Slide+Item+6+at+luminoum.com"
+      src="https://luminoum.com/dev/images/banner-home-lumislim.jpg"
       alt=""
      />
     </div>
