@@ -55,13 +55,14 @@ export const ProductItemSection = styled.div({
  "& > div": {
   display: "flex",
   flexDirection: "column",
+  alignItems: "center",
   ".logo-luminoum": {
    img: {
     marginTop: 24,
    },
   },
   img: {
-   maxWidth: "100%",
+   maxWidth: 400,
    borderRadius: 30,
    filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
   },

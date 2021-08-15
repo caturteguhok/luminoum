@@ -1,18 +1,13 @@
 import { Container } from "@material-ui/core";
 import React from "react";
 import { OrderNowStyled } from "../../faq/faq.styles";
-import { BoxRadiusStyled } from "../about.styles";
 
 const OfficeContainer = () => {
  return (
   <OrderNowStyled>
    <Container maxWidth="lg">
     <div>
-     <BoxRadiusStyled
-      style={{
-       backgroundImage: "url(https://picsum.photos/id/1002/1920/1080)",
-      }}
-     />
+     <img src="https://luminoum.com/dev/images/ali-logo.png" alt="" />
     </div>
     <div>
      <h1>Our Office</h1>

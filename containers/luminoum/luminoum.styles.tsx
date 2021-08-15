@@ -52,12 +52,14 @@ export const SectionTwoStyled = styled.div({
 
 export const SectionThreeStyled = styled.div({
  position: "relative",
+ zIndex: 1,
  backgroundColor: "#F9E1EC",
  padding: "1px 0 120px 0",
 });
 
 export const SectionFourStyled = styled.div({
  position: "relative",
+ zIndex: 6,
  backgroundColor: "#FDE5FE",
  padding: "1px 0 120px 0",
  boxShadow: "inset 0px 4px 19px -1px rgba(0, 0, 0, 0.15)",
@@ -277,11 +279,12 @@ export const QuoteStyled = styled.div({
  "&:before": {
   content: "''",
   position: "absolute",
-  top: 0,
-  left: 0,
-  zIndex: 0,
-  width: "100%",
-  height: 400,
+  top: "-14%",
+  left: "50%",
+  zIndex: -1,
+  width: 2000,
+  height: 2000,
+  transform: "translate(-50%,0)",
   backgroundColor: "#FEF5F9",
   borderTopLeftRadius: "50%",
   borderTopRightRadius: "50%",
@@ -383,7 +386,7 @@ export const TimingItemStyled = styled.div({
   maxWidth: "45%",
   textAlign: "center",
   img: {
-   maxWidth: "100%",
+   maxWidth: 400,
   },
  },
  p: {

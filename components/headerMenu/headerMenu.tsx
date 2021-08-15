@@ -69,10 +69,10 @@ const HomePage: React.FC<IProps> = ({ headerAbsolute, headerBlock }) => {
          <ClickAwayListener onClickAway={handleClose}>
           <MenuList autoFocusItem={open} id="menu-list-grow">
            <MenuItem onClick={handleClose}>
-            <Link href="/luminoum">Luminoum</Link>
+            <Link href="/luminoum">LUMINOUM</Link>
            </MenuItem>
            <MenuItem onClick={handleClose}>
-            <Link href="/lumislim">Lumislim</Link>
+            <Link href="/lumislim">LUMISLIM</Link>
            </MenuItem>
           </MenuList>
          </ClickAwayListener>
