@@ -51,11 +51,16 @@ export const SectionTwoStyled = styled.div({
 });
 
 export const SectionThreeStyled = styled.div({
+ position: "relative",
  backgroundColor: "#F9E1EC",
+ padding: "1px 0 120px 0",
 });
 
 export const SectionFourStyled = styled.div({
+ position: "relative",
  backgroundColor: "#FDE5FE",
+ padding: "1px 0 120px 0",
+ boxShadow: "inset 0px 4px 19px -1px rgba(0, 0, 0, 0.15)",
 });
 
 export const CollagenStyled = styled.div({
@@ -94,6 +99,16 @@ export const LuminoumBgOneStyled = styled.div({
  },
 });
 
+export const LuminoumBgThreeStyled = styled.div({
+ position: "absolute",
+ bottom: 0,
+ left: 0,
+ zIndex: 0,
+ img: {
+  maxWidth: "100%",
+ },
+});
+
 export const WhyStyled = styled.div({
  position: "relative",
  zIndex: 5,
@@ -116,6 +131,17 @@ export const TitleLuminoumStyled = styled.div({
   fontSize: 32,
   fontWeight: 700,
   color: "#923196",
+ },
+});
+
+export const TitleWoBlockStyled = styled.div({
+ display: "flex",
+ justifyContent: "center",
+ marginTop: 120,
+ h1: {
+  fontSize: 36,
+  color: "#923196",
+  marginBottom: 20,
  },
 });
 
@@ -285,4 +311,105 @@ export const QuoteStyled = styled.div({
    textAlign: "center",
   },
  },
+});
+
+export const ImgLogoCollagenStyled = styled.div({
+ display: "flex",
+ flexDirection: "column",
+ alignItems: "center",
+ marginBottom: 80,
+ img: {
+  maxWidth: 300,
+  "& + img": {
+   maxWidth: 500,
+  },
+ },
+});
+
+export const BenefitItemStyled = styled.div({
+ display: "flex",
+ flexDirection: "column",
+ alignItems: "center",
+ "& > div": {
+  display: "flex",
+  alignItems: "center",
+  color: "#540B6D",
+  "& > div": {
+   margin: "0 36px",
+   strong: {
+    fontSize: 32,
+    fontWeight: 700,
+    marginBottom: 16,
+    display: "block",
+   },
+   ul: {
+    listStyle: "none",
+    li: {
+     listStyle: "none",
+     display: "flex",
+     alignItems: "center",
+     fontSize: 18,
+     "&:before": {
+      content: "'·'",
+      fontSize: 100,
+      verticalAlign: "middle",
+      lineHeight: "40px",
+      position: "relative",
+      top: -9,
+      left: 0,
+      marginRight: 10,
+     },
+    },
+   },
+  },
+  "& + div": {
+   marginTop: 80,
+  },
+ },
+ img: {
+  maxWidth: 400,
+  filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4))",
+ },
+});
+
+export const TimingItemStyled = styled.div({
+ display: "flex",
+ alignItems: "center",
+ flexWrap: "wrap",
+ fontSize: 24,
+ color: "#540B6D",
+ div: {
+  flex: "0 0 45%",
+  maxWidth: "45%",
+  textAlign: "center",
+  img: {
+   maxWidth: "100%",
+  },
+ },
+ p: {
+  flex: "0 0 10%",
+  maxWidth: "10%",
+  textAlign: "center",
+  lineHeight: 1.5,
+ },
+});
+
+export const ServingItemStyled = styled.div({
+ display: "grid",
+ gridTemplateColumns: "repeat(3, 1fr)",
+ gap: 36,
+ div: {
+  textAlign: "center",
+  fontSize: 24,
+  color: "#540B6D",
+  lineHeight: 1.5,
+  img: {
+   maxHeight: 240,
+  },
+ },
+});
+
+export const SpacingStyled = styled.div({
+ paddingTop: 100,
+ paddingBottom: 100,
 });
