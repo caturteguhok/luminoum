@@ -52,14 +52,14 @@ export const SectionTwoStyled = styled.div({
 
 export const SectionThreeStyled = styled.div({
  position: "relative",
- zIndex: 1,
+ zIndex: 6,
  backgroundColor: "#F9E1EC",
  padding: "1px 0 120px 0",
 });
 
 export const SectionFourStyled = styled.div({
  position: "relative",
- zIndex: 6,
+ zIndex: 1,
  backgroundColor: "#FDE5FE",
  padding: "1px 0 120px 0",
  boxShadow: "inset 0px 4px 19px -1px rgba(0, 0, 0, 0.15)",
