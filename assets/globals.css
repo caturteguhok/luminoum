@@ -1,3 +1,6 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
 html,
 body {
   padding: 0;
@@ -14,4 +17,8 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.MuiDrawer-paper {
+  background-color: rgba(255, 255, 255, 0.7);
 }
