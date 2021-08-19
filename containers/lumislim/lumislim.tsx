@@ -6,6 +6,7 @@ import {
  SectionTwoStyled,
  SectionThreeStyled,
  SectionFourStyled,
+ LuminoumBgThreeStyled,
  LumislimBgOneStyled,
  LumislimBgOneSubOneStyled,
 } from "./lumislim.styles";
