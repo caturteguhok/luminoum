@@ -1,5 +1,9 @@
 import Color from "../../assets/color";
 import styled from "@emotion/styled";
+import facepaint from "facepaint";
+
+const breakpoints = [991.98, 767.98, 479.98];
+const mq = facepaint(breakpoints.map((bp) => `@media (max-width: ${bp}px)`));
 
 export const PageHomeStyled = styled.div({
  backgroundColor: Color.light,
@@ -48,34 +52,37 @@ export const SliderStyled = styled.div({
  },
 });
 
-export const ProductItemSection = styled.div({
- display: "grid",
- gridTemplateColumns: "repeat(2, 1fr)",
- gap: 100,
- "& > div": {
-  display: "flex",
-  flexDirection: "column",
-  alignItems: "center",
-  ".logo-luminoum": {
+export const ProductItemSection = styled.div(
+ mq({
+  display: "grid",
+  gridTemplateColumns: "repeat(2, 1fr)",
+  gap: 100,
+  "& > div": {
+   display: "flex",
+   flexDirection: "column",
+   alignItems: "center",
+   ".logo-luminoum": {
+    img: {
+     marginTop: [24, undefined, 0],
+     marginBottom: [undefined, undefined, 24],
+    },
+   },
    img: {
-    marginTop: 24,
+    maxWidth: 400,
+    borderRadius: 30,
+    filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+   },
+   p: {
+    textAlign: "center",
+    img: {
+     width: 200,
+     borderRadius: 0,
+     filter: "none",
+    },
    },
   },
-  img: {
-   maxWidth: 400,
-   borderRadius: 30,
-   filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
-  },
-  p: {
-   textAlign: "center",
-   img: {
-    width: 200,
-    borderRadius: 0,
-    filter: "none",
-   },
-  },
- },
-});
+ })
+);
 
 export const AboutDescStyled = styled.div({
  position: "absolute",
