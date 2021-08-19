@@ -66,8 +66,7 @@ export const ProductItemSection = styled.div(
     textAlign: "center",
     ".logo-luminoum": {
      img: {
-      marginTop: [24, undefined, 0],
-      marginBottom: [undefined, undefined, 24],
+      marginTop: 24,
      },
     },
     img: {
